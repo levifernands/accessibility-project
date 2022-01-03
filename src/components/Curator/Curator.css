@@ -1,0 +1,57 @@
+.curatorContainer {
+  align-items: center;
+  background-color: rgba(0, 182, 193, 0.5);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.curatorContainer .curatorPicture {
+  border: 1px solid #bfbfc0;
+  border-radius: 50%;
+  height: 85px;
+  margin: 2rem;
+  overflow: hidden;
+  width: 85px;
+}
+.curatorContainer .curatorInfo {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+  width: 40%;
+}
+
+.curatorContainer .curatorInfo .curatorTitle {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.curatorContainer .curatorInfo .curatorTitle h3 {
+  color: #454545;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin: 0;
+} /* Curator's name */
+
+.curatorContainer .curatorInfo .curatorTitle h6 {
+  color: #666666;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  margin: 0 1rem;
+} /* "Curator" title */
+
+.curatorContainer .curatorInfo p {
+  width: 100%;
+  font-size: 1.5rem;
+  color: #454545;
+  font-weight: 400;
+}

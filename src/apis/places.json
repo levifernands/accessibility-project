@@ -1,0 +1,109 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "Dragão do Mar de Arte e Cultura",
+      "description": "Lorem ipsum dolor sit amet",
+      "location": {
+        "lat": "01234",
+        "long": "43210"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": false },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mercado dos Pinhões",
+      "description": "Lorem ipsum dolor sit amet",
+      "location": {
+        "lat": "01234",
+        "long": "43210"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Museu de Fortaleza ficticio",
+      "description": "Lorem ipsum dolor sit amet",
+      "location": {
+        "lat": "01234",
+        "long": "43210"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Museu de Fortaleza ficticio",
+      "description": "Lorem ipsum dolor sit amet",
+      "location": {
+        "lat": "01234",
+        "long": "43210"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Museu de Fortaleza ficticio",
+      "description": "Lorem ipsum dolor sit amet",
+      "location": {
+        "lat": "01234",
+        "long": "43210"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": true },
+        { "item": 6, "status": true },
+        { "item": 7, "status": true },
+        { "item": 8, "status": true },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+.places {
+  width: 100%;
+}
+
+.places .placesHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 0 4rem;
+  width: 100%;
+}
+
+.places .placesHeader .placesTitle {
+  font-size: 3.2rem;
+  color: #00b6c1;
+}
+
+.places .placesHeader .placesTitle span {
+  color: #454545;
+}
+
+.places .placesHeader .placesSelect {
+  align-items: center;
+  border-bottom: 1px solid #000000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 4px 15px;
+  width: 22rem;
+}
+
+.places .placesHeader .placesSelect h5 {
+  color: #706d6d;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.places .placesHeader .placesSelect select {
+  border: 0 none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 425px) {
+  .places .placesHeader {
+    flex-wrap: wrap;
+  }
+  .places .placesHeader .placesSelect {
+    margin-top: 1rem;
+  }
+}

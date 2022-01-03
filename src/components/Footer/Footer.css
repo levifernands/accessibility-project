@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+}
+
+.footer .footerSection {
+  padding: 3.5rem 0;
+}
+
+.footer .footerSection .footerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer .footerSection a {
+  color: #0070c1;
+}
+
+.footer .footerSection a:hover {
+  color: #0036c1;
+}
+.footer .footerSectionFirst {
+  background-color: #d0eef0;
+  color: black;
+  font-size: 1.5rem;
+}
+.footer .footerSectionSecond {
+  background-color: #00b6c1;
+  color: #ffff;
+  font-size: 1.8rem;
+}
+
+.footer .footerSectionSecond small {
+  font-weight: 400;
+  display: block;
+  width: 100%;
+}

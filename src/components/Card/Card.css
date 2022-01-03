@@ -1,0 +1,50 @@
+.cardContainer {
+  width: 100%;
+  max-width: 222px;
+  margin-bottom: 6rem;
+}
+.cardContainer .cardImage {
+  border: 1px solid #d0eef0;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  height: 222px;
+  width: 100%;
+}
+.cardContainer .cardContent {
+  padding: 1.6rem;
+}
+
+.cardContainer .cardContent h3 {
+  color: #454545;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.cardContainer p {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+.cardContainer .cardContent .cardFacilities {
+  display: grid;
+  grid-template-columns: repeat(5, 3rem);
+  grid-gap: 0.5rem;
+  list-style-type: none;
+  margin: 1rem auto;
+}
+
+.cardContainer .cardContent .cardFacilities .cardFacilitiesItem {
+  align-items: center;
+  background-color: #0036c1;
+  border-radius: 5px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.cardContainer .cardContent .cardFacilities .cardFacilitiesItemDisabled {
+  background-color: #bfbfc0;
+}

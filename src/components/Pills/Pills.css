@@ -1,0 +1,25 @@
+.pillsContainer {
+  align-items: center;
+  background-color: #00b6c1;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 400;
+  justify-content: center;
+  height: 2.9rem;
+  margin-bottom: 0.8rem;
+  margin-left: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: max-content;
+}
+
+.pillsContainer:hover {
+  background-color: #5ec8ce;
+}
+
+.pillsContainerEnabled {
+  background-color: #9d9d9d;
+}
