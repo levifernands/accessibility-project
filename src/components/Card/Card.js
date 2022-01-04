@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 import "./Card.css";
+
 import iconAccessibleRestroom from "../../images/facilities/icon-accessible-restroom.png";
 import iconAudioDescription from "../../images/facilities/icon-audio-description.png";
 import iconBraille from "../../images/facilities/icon-braille.png";
@@ -12,126 +13,60 @@ import iconParking from "../../images/facilities/icon-parking.png";
 import iconRamp from "../../images/facilities/icon-ramp.png";
 import iconTactility from "../../images/facilities/icon-tactility.png";
 
-const Card = (item) => {
+const facilities = [
+  { id: 1, name: "Sinalização em Braile", icon: iconBraille },
+  { id: 2, name: "Audio descrição", icon: iconAudioDescription },
+  { id: 3, name: "Banheiro acessível", icon: iconAccessibleRestroom },
+  { id: 4, name: "Elevador para cadeirantes", icon: iconElevator },
+  {
+    id: 5,
+    name: "Estacionamento para idosos / deficientes",
+    icon: iconParking,
+  },
+  { id: 6, name: "Permite acesso de cães-guias", icon: iconGuideDog },
+  { id: 7, name: "Piso tátil de alerta", icon: iconTactility },
+  { id: 8, name: "Portas largas", icon: iconLargeDoor },
+  { id: 9, name: "Rampas de acesso para cadeirante", icon: iconRamp },
+  { id: 10, name: "Atendimento em Libras", icon: iconLibras },
+];
+
+const isChecked = (facility, place) => {
+  const findedFacility = place.facilities.find((currentFacility) => {
+    return currentFacility.item === facility.id;
+  });
+
+  if (!findedFacility) {
+    return false;
+  } else {
+    return findedFacility.status;
+  }
+};
+const Card = ({ place }) => {
+  const imagePath = require("../../images" + place.image);
   return (
     <div className="card cardContainer">
-      <div className="cardImage"></div>
+      <div className="cardImage">
+        <img src={imagePath.default} alt={place.name} title={place.name} />
+      </div>
       <div className="cardContent">
-        <h3>Nome do local</h3>
+        <h3>{place.name}</h3>
         <ul className="cardFacilities">
-          <li
-            className="cardFacilitiesItem" /* {`cardFacilitiesItem ${item.facilities[0]} ${
-              item.facilities[0].status ? "cardFacilitiesItemDisabled" : ""
-            }`} */
-          >
-            <img
-              src={iconBraille}
-              alt="Braille"
-              title="Sinalização em Braile"
-            ></img>
-          </li>
-          <li
-            className="cardFacilitiesItem" /* {`cardFacilitiesItem ${item.facilities[1]} ${
-              item.facilities[1].status ? "cardFacilitiesItemDisabled" : ""
-            }`} */
-          >
-            <img
-              src={iconAudioDescription}
-              alt="Audio Description"
-              title="Áudio descrição"
-            ></img>
-          </li>
-          <li
-            className="cardFacilitiesItem" /* {`cardFacilitiesItem ${item.facilities[2]} ${
-              item.facilities[2].status ? "cardFacilitiesItemDisabled" : ""
-            }`} */
-          >
-            <img
-              src={iconAccessibleRestroom}
-              alt="Accessible Restroom"
-              title="Banheiro acessível"
-            ></img>
-          </li>
-          <li
-            className="cardFacilitiesItem" /* {`cardFacilitiesItem ${item.facilities[3]} ${
-              item.facilities[3].status ? "cardFacilitiesItemDisabled" : ""
-            }`} */
-          >
-            <img
-              src={iconElevator}
-              alt="Accessible elevator"
-              title="Elevador para cadeirantes"
-            ></img>
-          </li>
-          <li
-            className="cardFacilitiesItem" /* {`cardFacilitiesItem ${item.facilities[4]} ${
-              item.facilities[4].status ? "cardFacilitiesItemDisabled" : ""
-            }`} */
-          >
-            <img
-              src={iconParking}
-              alt="Parking for wheelchair users / eldery"
-              title="Estacionamento para idosos / deficientes"
-            ></img>
-          </li>
-          <li
-            className="cardFacilitiesItem" /* {`cardFacilitiesItem ${item.facilities[5]} ${
-              item.facilities[5].status ? "cardFacilitiesItemDisabled" : ""
-            }`} */
-          >
-            <img
-              src={iconGuideDog}
-              alt="Guide dogs allowed"
-              title="Permite acesso de cães-guias"
-            ></img>
-          </li>
-          <li
-            className="cardFacilitiesItem" /* {`cardFacilitiesItem ${item.facilities[6]} ${
-              item.facilities[6].status ? "cardFacilitiesItemDisabled" : ""
-            }`} */
-          >
-            <img
-              src={iconTactility}
-              alt="Tactility available"
-              title="Piso tátil de alerta"
-            ></img>
-          </li>
-          <li
-            className="cardFacilitiesItem" /* {`cardFacilitiesItem ${item.facilities[7]} ${
-              item.facilities[7].status ? "cardFacilitiesItemDisabled" : ""
-            }`} */
-          >
-            <img
-              src={iconLargeDoor}
-              alt="Large doors"
-              title="Portas largas"
-            ></img>
-          </li>
-          <li
-            className="cardFacilitiesItem" /* {`cardFacilitiesItem ${item.facilities[7]} ${
-              item.facilities[7].status ? "cardFacilitiesItemDisabled" : ""
-            }`} */
-          >
-            <img
-              src={iconRamp}
-              alt="Ramps for wheelchair users"
-              title="Rampas de acesso para cadeirante"
-            ></img>
-          </li>
-          <li
-            className="cardFacilitiesItem" /* {`cardFacilitiesItem ${item.facilities[8]} ${
-              item.facilities[8].status ? "cardFacilitiesItemDisabled" : ""
-            }`} */
-          >
-            <img
-              src={iconLibras}
-              alt="Libras"
-              title="Atendimento em Libras"
-            ></img>
-          </li>
+          {facilities.map((facility) => (
+            <li
+              className={`cardFacilitiesItem ${
+                isChecked(facility, place) ? "" : "cardFacilitiesItemDisabled"
+              }`}
+            >
+              <img
+                src={facility.icon}
+                alt={facility.name}
+                title={facility.name}
+              ></img>
+            </li>
+          ))}
         </ul>
       </div>
-      <p>LOREM IPSUM DOLOR SIT AMET{/* {item.description} */}</p>
+      <p>{place.description}</p>
       <Button>Como chegar</Button>
     </div>
   );

@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.css";
 import logoAcessaBR from "../../images/logoAcessaBR.svg";
 import logoEbac from "../../images/logoEbac.svg";
+import { LocationContext } from "../../contexts/LocationContext";
 
-const Header = (props) => {
+const Header = () => {
+  const { city, state } = useContext(LocationContext);
   return (
     <header className="headerContainer">
       <div className="headerLogo headerLogoState">
         <img src={logoAcessaBR} alt="Logo AcessaBR" />
         <span className="headerCity">
-          / {props.city} - {props.uf}
+          / {city} - {state}
         </span>
       </div>
       <div className="headerLogoEbac">

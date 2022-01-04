@@ -2,20 +2,23 @@
   "places": [
     {
       "id": 1,
-      "name": "Dragão do Mar de Arte e Cultura",
-      "description": "Lorem ipsum dolor sit amet",
+      "name": "Museu da Fotografia",
+      "description": "Equipamento cultural dedicado à exposição, interpretação, debate e disseminação da cultura fotográfica.",
+      "category": "Museu",
+      "image": "/places/museu-fotografia.jpg",
+      "link": "https://museudafotografia.com.br",
       "location": {
         "lat": "01234",
-        "long": "43210"
+        "long": "01234"
       },
       "facilities": [
         { "item": 1, "status": true },
-        { "item": 2, "status": false },
-        { "item": 3, "status": true },
+        { "item": 2, "status": true },
+        { "item": 3, "status": false },
         { "item": 4, "status": true },
         { "item": 5, "status": true },
         { "item": 6, "status": true },
-        { "item": 7, "status": true },
+        { "item": 7, "status": false },
         { "item": 8, "status": true },
         { "item": 9, "status": true },
         { "item": 10, "status": true }
@@ -23,17 +26,20 @@
     },
     {
       "id": 2,
-      "name": "Mercado dos Pinhões",
-      "description": "Lorem ipsum dolor sit amet",
+      "name": "Mercado Central",
+      "description": "Mercado especializado em produtos artesanais cearenses localizado na cidade de Fortaleza, Ceará, Brasil. É de propriedade da prefeitura municipal.",
+      "image": "/places/mercado-central.jpg",
+      "link": "https://mercadocentraldefortaleza.com.br",
+      "category": "Loja",
       "location": {
         "lat": "01234",
-        "long": "43210"
+        "long": "01234"
       },
       "facilities": [
         { "item": 1, "status": true },
-        { "item": 2, "status": true },
+        { "item": 2, "status": false },
         { "item": 3, "status": true },
-        { "item": 4, "status": true },
+        { "item": 4, "status": false },
         { "item": 5, "status": true },
         { "item": 6, "status": true },
         { "item": 7, "status": true },
@@ -44,32 +50,38 @@
     },
     {
       "id": 3,
-      "name": "Museu de Fortaleza ficticio",
-      "description": "Lorem ipsum dolor sit amet",
+      "name": "Parque do Cocó",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "/places/parque-coco.jpg",
+      "link": "https://www.sema.ce.gov.br/gestao-de-ucs/parques/parque-estadual-do-coco_/",
+      "category": "Parque",
       "location": {
         "lat": "01234",
-        "long": "43210"
+        "long": "01234"
       },
       "facilities": [
-        { "item": 1, "status": true },
+        { "item": 1, "status": false },
         { "item": 2, "status": true },
-        { "item": 3, "status": true },
+        { "item": 3, "status": false },
         { "item": 4, "status": true },
         { "item": 5, "status": true },
-        { "item": 6, "status": true },
+        { "item": 6, "status": false },
         { "item": 7, "status": true },
         { "item": 8, "status": true },
-        { "item": 9, "status": true },
-        { "item": 10, "status": true }
+        { "item": 9, "status": false },
+        { "item": 10, "status": false }
       ]
     },
     {
       "id": 4,
-      "name": "Museu de Fortaleza ficticio",
-      "description": "Lorem ipsum dolor sit amet",
+      "name": "Theatro José de Alencar",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "/places/jose-de-alencar.jpg",
+      "link": "https://theatrojosedealencar.secult.ce.gov.br",
+      "category": "Parque",
       "location": {
         "lat": "01234",
-        "long": "43210"
+        "long": "01234"
       },
       "facilities": [
         { "item": 1, "status": true },
@@ -86,21 +98,48 @@
     },
     {
       "id": 5,
-      "name": "Museu de Fortaleza ficticio",
-      "description": "Lorem ipsum dolor sit amet",
+      "name": "Centro Dragão do Mar de Arte e Cultura",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "/places/dragao.jpeg",
+      "link": "http://www.dragaodomar.org.br/",
+      "category": "Teatro",
       "location": {
         "lat": "01234",
-        "long": "43210"
+        "long": "01234"
       },
       "facilities": [
         { "item": 1, "status": true },
-        { "item": 2, "status": true },
+        { "item": 2, "status": false },
         { "item": 3, "status": true },
         { "item": 4, "status": true },
-        { "item": 5, "status": true },
+        { "item": 5, "status": false },
         { "item": 6, "status": true },
-        { "item": 7, "status": true },
-        { "item": 8, "status": true },
+        { "item": 7, "status": false },
+        { "item": 8, "status": false },
+        { "item": 9, "status": true },
+        { "item": 10, "status": true }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Arena Castelão",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "/places/castelao.jpg",
+      "link": "http://www.dragaodomar.org.br/",
+      "category": "Teatro",
+      "location": {
+        "lat": "01234",
+        "long": "01234"
+      },
+      "facilities": [
+        { "item": 1, "status": true },
+        { "item": 2, "status": false },
+        { "item": 3, "status": true },
+        { "item": 4, "status": true },
+        { "item": 5, "status": false },
+        { "item": 6, "status": true },
+        { "item": 7, "status": false },
+        { "item": 8, "status": false },
         { "item": 9, "status": true },
         { "item": 10, "status": true }
       ]
