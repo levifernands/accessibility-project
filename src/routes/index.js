@@ -11,8 +11,6 @@ import Places from "../components/Places/Places";
 import Curator from "../components/Curator/Curator";
 import { FilterContext } from "../contexts/FilterContext";
 
-/* import { FilterContext } from "../contexts/FilterContext"; */
-
 const Routes = (props) => {
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
